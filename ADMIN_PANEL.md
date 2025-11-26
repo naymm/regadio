@@ -238,3 +238,5 @@ const permissions = {
 - [ ] Paginação
 - [ ] Drag & drop para reordenar
 
+
+

@@ -145,3 +145,5 @@ export const getNewsById = (id: string): NewsArticle | undefined => {
   return newsArticles.find(article => article.id === id);
 };
 
+
+

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
@@ -13,23 +13,51 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const { login } = useAuth();
+  const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
+
+  // Redirecionar se já estiver autenticado
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate("/admin", { replace: true });
+    }
+  }, [isAuthenticated, navigate]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     setLoading(true);
 
-    const success = await login(email, password);
+    try {
+      // Verificar variáveis de ambiente (debug)
+      if (!import.meta.env.VITE_SUPABASE_URL || !import.meta.env.VITE_SUPABASE_ANON_KEY) {
+        setError("Variáveis de ambiente não configuradas. Verifique o arquivo .env.local");
+        setLoading(false);
+        return;
+      }
 
-    if (success) {
-      navigate("/admin");
-    } else {
-      setError("Email ou senha incorretos");
+      const result = await login(email, password);
+      console.log("Login result:", result);
+
+      if (result.success) {
+        console.log("Login successful, waiting for state update...");
+        // Aguardar um pouco para garantir que o estado foi atualizado
+        // O useEffect vai redirecionar quando isAuthenticated mudar
+        // Mas também forçar redirecionamento após delay
+        setTimeout(() => {
+          console.log("Forcing redirect to /admin");
+          navigate("/admin", { replace: true });
+        }, 300);
+      } else {
+        console.error("Login failed:", result.error);
+        setError(result.error || "Email ou senha incorretos");
+      }
+    } catch (error: any) {
+      console.error("Login error:", error);
+      setError(error.message || "Erro ao fazer login");
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   };
 
   return (
