@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 40% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 15%;
+
+    --primary: 220 45% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 98%;
+    --secondary-foreground: 220 40% 15%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 15% 45%;
+
+    --accent: 357 84% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 25 95% 53%;
+
+    --radius: 0.5rem;
+
+    --navy-dark: 220 50% 10%;
+    --navy-darker: 220 55% 8%;
+    --orange-vibrant: 357 84% 52%;
+    --orange-light: 357 84% 62%;
+    --gray-light: 0 0% 98%;
+    --gray-medium: 220 10% 60%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(220 45% 15% / 0.95), hsl(220 50% 10% / 0.98));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 100% 65%));
+    --shadow-card: 0 4px 20px hsl(220 45% 15% / 0.08);
+    --shadow-hover: 0 8px 30px hsl(220 45% 15% / 0.12);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 220 50% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 45% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 45% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 220 45% 15%;
+
+    --secondary: 220 40% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 40% 20%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 40% 25%;
+    --input: 220 40% 25%;
+    --ring: 25 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-padding {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-orange-light bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-accent hover:bg-orange-light text-accent-foreground font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-primary hover:bg-navy-dark text-primary-foreground font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-lg;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1;
+    box-shadow: 0 4px 20px hsl(220 45% 15% / 0.08);
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0 8px 30px hsl(220 45% 15% / 0.12);
+  }
+
+  .vermelho {
+    color: hsl(var(--accent));
+  }
+
+  .branco {
+    color: hsl(0 0% 100%);
+  }
+
+  .texto-justificado {
+    text-align: justify;
+  }
+}
