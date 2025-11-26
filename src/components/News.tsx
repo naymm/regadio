@@ -1,30 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
-import project1 from "@/assets/project-1.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project6 from "@/assets/project-6.jpg";
-
-const news = [
-  {
-    image: project6,
-    date: "15 Nov 2025",
-    title: "Inauguração da Cidade Nova Esperança",
-    description: "Marco histórico com entrega de 5.000 habitações e infraestruturas completas para a comunidade."
-  },
-  {
-    image: project3,
-    date: "08 Nov 2025",
-    title: "Parceria com Banco Africano de Desenvolvimento",
-    description: "Financiamento aprovado para novo mega-projecto de desenvolvimento urbano sustentável."
-  },
-  {
-    image: project1,
-    date: "01 Nov 2025",
-    title: "Prémio de Excelência em Construção 2025",
-    description: "REGADIO reconhecida pela qualidade e inovação nos projectos de infraestrutura em África."
-  },
-];
+import { newsArticles } from "@/data/news";
 
 const News = () => {
   return (
@@ -41,10 +18,11 @@ const News = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {news.map((item, index) => (
-            <article 
-              key={index}
-              className="bg-card rounded-2xl overflow-hidden border border-border hover:border-accent transition-all duration-300 card-hover group"
+          {newsArticles.slice(0, 3).map((item) => (
+            <Link
+              key={item.id}
+              to={`/noticias/${item.slug}`}
+              className="bg-card rounded-2xl overflow-hidden border border-border hover:border-accent transition-all duration-300 card-hover group block"
             >
               <div className="aspect-[16/10] overflow-hidden">
                 <img 
@@ -64,12 +42,12 @@ const News = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   {item.description}
                 </p>
-                <button className="text-accent font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                <span className="text-accent font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
                   Ler mais
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
 

@@ -5,25 +5,8 @@ import PageHero from "@/components/PageHero";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
-import { Megaphone, Newspaper, PenLine, Mail, Phone } from "lucide-react";
-
-const pressReleases = [
-  {
-    title: "REGADIO anuncia o Programa 'Cidades Integradas 2030'",
-    date: "05 Nov 2025",
-    summary: "Novo pipeline de 3 cidades inteligentes com foco em mobilidade eléctrica, água e soluções de resíduos.",
-  },
-  {
-    title: "Joint-venture com fabricante internacional de prefabricados",
-    date: "22 Out 2025",
-    summary: "Acordo permitirá aumentar em 40% a capacidade de produção modular em Angola e países vizinhos.",
-  },
-  {
-    title: "Relatório ESG 2025 disponível para investidores",
-    date: "09 Out 2025",
-    summary: "Documento destaca a redução de 28% nas emissões de CO₂ nas operações logísticas.",
-  },
-];
+import { Megaphone, Newspaper, PenLine, Mail, Phone, ArrowRight } from "lucide-react";
+import { newsArticles } from "@/data/news";
 
 const mediaContacts = [
   { icon: Mail, title: "Press Desk", detail: "press@regadio.co.ao" },
@@ -71,19 +54,22 @@ const NewsPage = () => {
               </div>
             </div>
             <div className="space-y-6">
-              {pressReleases.map((release) => (
-                <article key={release.title} className="p-6 rounded-2xl bg-white border border-border card-hover">
+              {newsArticles.map((article) => (
+                <article key={article.id} className="p-6 rounded-2xl bg-white border border-border card-hover group">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-2">
-                    <p className="text-sm uppercase tracking-widest text-muted-foreground">{release.date}</p>
+                    <p className="text-sm uppercase tracking-widest text-muted-foreground">{article.date}</p>
                     <span className="inline-flex items-center gap-2 text-accent font-semibold">
                       <Newspaper className="w-4 h-4" />
-                      Comunicado oficial
+                      {article.category || "Notícia"}
                     </span>
                   </div>
-                  <h3 className="text-2xl font-display text-primary mb-2">{release.title}</h3>
-                  <p className="text-muted-foreground mb-4">{release.summary}</p>
-                  <Button variant="ghost" className="text-accent hover:text-orange-light px-0">
-                    Ler comunicado completo
+                  <h3 className="text-2xl font-display text-primary mb-2 group-hover:text-accent transition-colors">{article.title}</h3>
+                  <p className="text-muted-foreground mb-4">{article.description}</p>
+                  <Button variant="ghost" className="text-accent hover:text-orange-light px-0" asChild>
+                    <Link to={`/noticias/${article.slug}`}>
+                      Ler notícia completa
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
                   </Button>
                 </article>
               ))}
