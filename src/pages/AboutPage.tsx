@@ -56,16 +56,12 @@ const AboutPage = () => {
       <Navbar />
       <main>
         <PageHero
-          kicker="Institucional"
-          title="Sobre a REGADIO"
+          title="Quem Somos"
           description="Somos uma plataforma africana de engenharia e construção que integra planeamento urbano, produção industrial e gestão de projectos complexos para criar cidades resilientes."
           actions={
             <>
               <Button className="btn-primary" asChild>
                 <Link to="/contactos">Fale com a nossa equipa</Link>
-              </Button>
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10" asChild>
-                <Link to="/projectos">Ver projectos</Link>
               </Button>
             </>
           }

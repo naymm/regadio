@@ -43,16 +43,12 @@ const ServicesPage = () => {
       <Navbar />
       <main>
         <PageHero
-          kicker="Serviços"
           title="Engenharia completa, ponta a ponta"
           description="Operamos toda a cadeia de valor, da conceção ao comissionamento, com equipas especializadas e activos próprios que reduzem risco, prazos e custos."
           actions={
             <>
               <Button className="btn-primary" asChild>
                 <Link to="/contactos">Solicitar proposta</Link>
-              </Button>
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10" asChild>
-                <Link to="/projectos">Ver casos de estudo</Link>
               </Button>
             </>
           }
