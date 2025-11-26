@@ -13,16 +13,7 @@ const services = [
     title: "Infraestruturas",
     description: "Pavimentação, drenagem, saneamento e redes de distribuição"
   },
-  {
-    icon: FileText,
-    title: "Promoção de Betas",
-    description: "Gestão de projectos, licenciamentos e documentação técnica"
-  },
-  {
-    icon: Layers,
-    title: "Promoção de Agregados",
-    description: "Produção e fornecimento de materiais de construção"
-  },
+
   {
     icon: ClipboardCheck,
     title: "Gestão de Projectos",
@@ -33,16 +24,7 @@ const services = [
     title: "Engenharia Civil",
     description: "Estudos, projectos e consultoria técnica especializada"
   },
-  {
-    icon: Map,
-    title: "Infraestruturas Urbanas",
-    description: "Desenvolvimento de cidades integradas e sustentáveis"
-  },
-  {
-    icon: Dam,
-    title: "Construção de Barragens",
-    description: "Grandes obras hidráulicas e aproveitamento de recursos"
-  },
+
 ];
 
 const Services = () => {
@@ -55,7 +37,7 @@ const Services = () => {
             Soluções Completas de Engenharia
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Da conceção à entrega, oferecemos serviços integrados para mega-projectos de infraestrutura
+            Da concepção à entrega, oferecemos serviços integrados para mega-projectos de infraestrutura
           </p>
         </div>
 

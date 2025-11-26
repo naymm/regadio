@@ -8,23 +8,16 @@ import { Building2, MapPin, Phone, Mail, Clock3, Send } from "lucide-react";
 
 const offices = [
   {
-    title: "Sede corporativa",
-    address: "Talatona, Luanda – Angola",
-    phone: "+244 999 000 222",
-    email: "hq@regadio.co.ao",
+    title: "Sede",
+    address: "Rua Marechal Brós Tito, nº 35/37, Edifício ESCOM, 4º andar, Luanda – Angola",
   },
-  {
-    title: "Centro de Engenharia",
-    address: "Zona Económica Especial, Viana",
-    phone: "+244 999 333 444",
-    email: "engenharia@regadio.co.ao",
-  },
+
 ];
 
 const supportChannels = [
-  { icon: Phone, label: "Linha geral", detail: "+244 999 123 456" },
-  { icon: Mail, label: "Propostas & parcerias", detail: "parcerias@regadio.co.ao" },
-  { icon: Clock3, label: "Horário", detail: "Seg-Sex, 08h00 - 18h00" },
+  { icon: Phone, label: "Linha geral", detail: "+244 926 159 196" },
+  { icon: Mail, label: "Propostas & parcerias", detail: "geral@regadio-ao.com" },
+  { icon: Clock3, label: "Horário", detail: "Seg-Sex, 08h00 - 17h00" },
 ];
 
 const ContactPage = () => {
@@ -33,7 +26,6 @@ const ContactPage = () => {
       <Navbar />
       <main>
         <PageHero
-          kicker="Contactos"
           title="Fale connosco"
           description="Partilhe o contexto do seu projecto, solicite propostas técnicas ou marque uma reunião com a nossa equipa executiva."
         />

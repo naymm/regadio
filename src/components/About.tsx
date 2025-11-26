@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import engineersImage from "@/assets/engineers-planning.jpg";
+import engenheiro from "../img/engenheiro.jpg";
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
           <div className="relative animate-fade-in">
             <div className="absolute -inset-4 bg-accent/10 rounded-2xl blur-2xl"></div>
             <img 
-              src={engineersImage}
+              src={engenheiro}
               alt="Engenheiros profissionais a planear projectos"
               className="relative rounded-2xl shadow-2xl w-full h-auto"
             />

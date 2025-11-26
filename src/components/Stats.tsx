@@ -3,11 +3,11 @@ import { Users, Building2, Route, Home, Award, Briefcase, Globe, CheckCircle } f
 const stats = [
   { icon: Users, value: "+100", label: "Colaboradores" },
   { icon: Building2, value: "1.500m²", label: "Construídos" },
-  { icon: Route, value: "1.000+km", label: "Infraestrutura" },
+  { icon: Route, value: "+100km", label: "Infraestrutura" },
   { icon: Home, value: "+79", label: "Obras Realizadas" },
   { icon: Award, value: "+7", label: "Anos de Experiência" },
   { icon: Briefcase, value: "+21", label: "Projectos em Curso" },
-  { icon: Globe, value: "5", label: "Países" },
+  { icon: Globe, value: "18", label: "Províncias" },
   { icon: CheckCircle, value: "+5", label: "Certificações em Curso" },
 ];
 

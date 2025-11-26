@@ -138,4 +138,8 @@ All colors MUST be HSL.
   .texto-justificado {
     text-align: justify;
   }
+
+  .texto-centralizado {
+    text-align: center !important;
+  }
 }

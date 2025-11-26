@@ -1,14 +1,11 @@
 import { Building2, Construction, School, Droplets, Route, Factory, Truck, Mountain } from "lucide-react";
 
 const capabilities = [
-  { icon: Building2, title: "Cidades Integradas", count: "10.000+" },
-  { icon: Construction, title: "Pontes e Viadutos", count: "50+" },
-  { icon: School, title: "Edifícios Públicos", count: "100+" },
-  { icon: Droplets, title: "Redes de Água", count: "1.000km" },
-  { icon: Route, title: "Vias e Pavimentação", count: "2.000km" },
-  { icon: Factory, title: "Centrais de Betão", count: "15" },
-  { icon: Truck, title: "Maquinaria Pesada", count: "500+" },
-  { icon: Mountain, title: "Agregados", count: "1M ton/ano" },
+  { icon: Construction, title: "Pontes e Viadutos", count: "+20" },
+  { icon: School, title: "Edifícios", count: "+10.800" },
+  { icon: Droplets, title: "Redes de Água", count: "100km" },
+  { icon: Route, title: "Vias e Pavimentação", count: "3km" },
+
 ];
 
 const Production = () => {
