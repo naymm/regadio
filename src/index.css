@@ -142,6 +142,10 @@ All colors MUST be HSL.
   .texto-centralizado {
     text-align: center !important;
   }
+
+  .certificado {
+    width: 70%;
+  }
 }
 
 /* News content styles */

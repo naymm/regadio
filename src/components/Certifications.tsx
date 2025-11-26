@@ -1,11 +1,14 @@
-import { Award, CheckCircle2, Shield, Globe2 } from "lucide-react";
 import workerImage from "@/assets/worker-certification.jpg";
+import iso9001 from "../img/certificados/ISO9001.png";
+import iso14001 from "../img/certificados/ISO14001.png";
+import iso45001 from "../img/certificados/ISO45001.png";
+import leed from "../img/certificados/LEED.png";
 
 const certifications = [
-  { icon: Award, title: "ISO 9001:2015", subtitle: "Gestão da Qualidade" },
-  { icon: Shield, title: "ISO 14001:2015", subtitle: "Gestão Ambiental" },
-  { icon: CheckCircle2, title: "ISO 45001:2018", subtitle: "Segurança no Trabalho" },
-  { icon: Globe2, title: "Compliance Internacional", subtitle: "Padrões Globais" },
+  { image: iso9001, title: "ISO 9001:2015", subtitle: "Gestão da Qualidade" },
+  { image: iso14001, title: "ISO 14001:2015", subtitle: "Gestão Ambiental" },
+  { image: iso45001, title: "ISO 45001:2018", subtitle: "Segurança no Trabalho" },
+  { image: leed, title: "LEED", subtitle: "Práticas sustentáveis em construções" },
 ];
 
 const Certifications = () => {
@@ -29,7 +32,13 @@ const Certifications = () => {
                   key={index}
                   className="p-6 rounded-xl bg-white border border-border hover:border-accent transition-all duration-300 card-hover"
                 >
-                  <cert.icon className="w-10 h-10 text-accent mb-4" />
+                  <div className="mb-4 flex items-center justify-center h-20">
+                    <img
+                      src={cert.image} 
+                      alt={cert.title}
+                      className="max-h-full max-w-full object-contain certificado"
+                    />
+                  </div>
                   <h3 className="text-lg font-bold text-primary mb-1 font-display">
                     {cert.title}
                   </h3>
