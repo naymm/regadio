@@ -18,6 +18,15 @@ const NewsDetailPage = () => {
     }
   }, [article, slug, navigate]);
 
+  // Scroll to top when article changes
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, [slug]);
+
   if (!article) {
     return null;
   }
