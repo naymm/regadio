@@ -12,6 +12,20 @@ import lucala2 from "../img/lucala/lucala2.jpeg";
 import lucala3 from "../img/lucala/lucala3.jpeg";
 import lucala4 from "../img/lucala/lucala4.jpeg";
 
+// IMAGENS CONDUTA DE CABINDA
+import conduta1 from "../img/conduta/conduta1.jpeg";
+import conduta2 from "../img/conduta/conduta2.jpeg";
+import conduta3 from "../img/conduta/conduta3.jpeg";
+import conduta4 from "../img/conduta/conduta4.jpeg";
+
+// IMAGEM KK5800
+import kk1 from "../img/kk5800/kk1.webp";
+import kk2 from "../img/kk5800/kk2.webp";
+import kk3 from "../img/kk5800/kk3.webp";
+import kk4 from "../img/kk5800/kk4.webp";
+import kk5 from "../img/kk5800/kk5.webp";
+import kk6 from "../img/kk5800/kk6.webp";
+
 
 
 import {
@@ -40,33 +54,33 @@ const projects: Project[] = [
     images: [lucala1, lucala2, lucala3, lucala4],
     title: "3 km de artérias vila do Lucala",
     category: "Reabilitação e construção",
-    location: "Luanda, Angola",
+    location: "Cuanza Norte, Angola",
     description: "Um complexo residencial moderno que oferece habitação de qualidade para mais de 5.000 famílias. O projeto inclui unidades residenciais, áreas comerciais, espaços verdes e infraestruturas completas de apoio.",
     status: "Concluído",
-    year: "2025-2025",
-    scope: "2.500 habitações • 15 hectares"
+    year: "2020-2025",
+    scope: "3 km de artérias, instalação das redes de esgotos e valas de drenagem."
   },
   {
-    image: project2,
-    images: [project2, project1, project4],
-    title: "Via Expressa Regional",
+    image: conduta1,
+    images: [conduta1, conduta2, conduta3],
+    title: "Conduta de Água de Cabinda",
     category: "Infraestrutura",
-    location: "Benguela, Angola",
+    location: "Cabinda, Angola",
     description: "Infraestrutura rodoviária de alta capacidade que conecta as principais cidades da região, melhorando a mobilidade e facilitando o transporte de mercadorias. A via inclui pontes, túneis e sistemas de sinalização inteligente.",
     status: "Concluído",
-    year: "2021-2024",
-    scope: "120 km de vias • 8 pontes"
+    year: "2024-2024",
+    scope: "2 km de extensão"
   },
   {
-    image: project3,
-    images: [project3, project5, project6],
-    title: "Centro Administrativo",
-    category: "Edifícios Públicos",
-    location: "Huambo, Angola",
+    image: kk1,
+    images: [kk1, kk2, kk3, kk4, kk5, kk6],
+    title: "Projecto Habitacional KK5800",
+    category: "Habitações",
+    location: "Luanda, Angola",
     description: "Edifício administrativo moderno que centraliza os serviços públicos da província. O projeto incorpora tecnologias sustentáveis e espaços flexíveis para acomodar diferentes departamentos governamentais.",
     status: "Em execução",
-    year: "2024-2026",
-    scope: "25.000 m² • 12 pisos"
+    year: "2025-2027",
+    scope: "1.800 apartamentos de 100m²"
   },
   {
     image: project4,
