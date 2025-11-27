@@ -68,3 +68,4 @@ FROM auth.users u
 LEFT JOIN public.profiles p ON u.id = p.id
 WHERE u.email = 'EMAIL_AQUI';
 
+

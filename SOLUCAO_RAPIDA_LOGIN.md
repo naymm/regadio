@@ -103,3 +103,4 @@ const { data, error } = await supabase
 console.log("Profile:", data, "Error:", error);
 ```
 
+

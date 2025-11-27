@@ -99,3 +99,4 @@ Consulte a seção de Troubleshooting em `SUPABASE_SETUP.md`
 
 
 
+

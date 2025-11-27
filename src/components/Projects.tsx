@@ -26,6 +26,18 @@ import kk4 from "../img/kk5800/kk4.webp";
 import kk5 from "../img/kk5800/kk5.webp";
 import kk6 from "../img/kk5800/kk6.webp";
 
+// IMAGEM CIFAB
+import cifab1 from "../img/cifab/cifab1.webp";
+import cifab2 from "../img/cifab/cifab2.webp";
+import cifab3 from "../img/cifab/cifab3.webp";
+
+
+// IMAGEM ESCOLA DE 22 SALAS
+import escola1 from "../img/escola-1/escola.webp";
+
+// IMAGEM PONTE DO RIO QUIDIDI
+import quididi1 from "../img/quididi/quididi1.jpg";
+import quididi2 from "../img/quididi/quididi2.jpg";
 
 
 import {
@@ -55,7 +67,7 @@ const projects: Project[] = [
     title: "3 km de artérias vila do Lucala",
     category: "Reabilitação e construção",
     location: "Cuanza Norte, Angola",
-    description: "Um complexo residencial moderno que oferece habitação de qualidade para mais de 5.000 famílias. O projeto inclui unidades residenciais, áreas comerciais, espaços verdes e infraestruturas completas de apoio.",
+    description: "Reabilitação e construção de 3 km de artérias na vila do Lucala, contemplando a melhoria das vias principais, renovação das infraestruturas de drenagem, estabilização do solo e implementação de soluções de escoamento eficientes. O projeto visa aumentar a mobilidade urbana, reduzir alagamentos e promover melhores condições de circulação para moradores, comerciantes e serviços essenciais.",
     status: "Concluído",
     year: "2020-2025",
     scope: "3 km de artérias, instalação das redes de esgotos e valas de drenagem."
@@ -66,7 +78,7 @@ const projects: Project[] = [
     title: "Conduta de Água de Cabinda",
     category: "Infraestrutura",
     location: "Cabinda, Angola",
-    description: "Infraestrutura rodoviária de alta capacidade que conecta as principais cidades da região, melhorando a mobilidade e facilitando o transporte de mercadorias. A via inclui pontes, túneis e sistemas de sinalização inteligente.",
+    description: "niciativa estratégica dedicada à captação, transporte e distribuição de água potável na província de Cabinda, garantindo maior eficiência no abastecimento e reforçando a infraestrutura hídrica local. O projeto envolve a instalação de condutas de alta capacidade, sistemas de bombeamento modernos e mecanismos de controle que asseguram a qualidade e a continuidade do fornecimento às comunidades e setores essenciais.",
     status: "Concluído",
     year: "2024-2024",
     scope: "2 km de extensão"
@@ -77,43 +89,43 @@ const projects: Project[] = [
     title: "Projecto Habitacional KK5800",
     category: "Habitações",
     location: "Luanda, Angola",
-    description: "Edifício administrativo moderno que centraliza os serviços públicos da província. O projeto incorpora tecnologias sustentáveis e espaços flexíveis para acomodar diferentes departamentos governamentais.",
+    description: "O Projecto Habitacional KK5800 é um moderno empreendimento residencial concebido para oferecer soluções habitacionais de qualidade, acessíveis e sustentáveis. Localizado em Luanda, o projeto integra infraestruturas urbanas, áreas verdes, equipamentos sociais e unidades habitacionais pensadas para proporcionar conforto, segurança e bem-estar às famílias. Desenvolvido com foco na urbanização organizada e no crescimento sustentável, o KK5800 pretende contribuir significativamente para a melhoria das condições de vida na região.",
     status: "Em execução",
     year: "2025-2027",
     scope: "1.800 apartamentos de 100m²"
   },
   {
-    image: project4,
-    images: [project4, project1, project2],
-    title: "Sistema de Abastecimento de Água",
-    category: "Saneamento",
-    location: "Lubango, Angola",
-    description: "Sistema completo de abastecimento de água potável que serve mais de 200.000 habitantes. Inclui estações de tratamento, reservatórios, rede de distribuição e sistemas de monitorização em tempo real.",
+    image: cifab1,
+    images: [cifab1, cifab2, cifab3],
+    title: "Complexo Farmacêutico CIFAB",
+    category: "Construção",
+    location: "Luanda, Angola",
+    description: "O Complexo Farmacêutico CIFAB é uma infraestrutura de referência dedicada à produção, armazenamento e distribuição de medicamentos, reunindo tecnologias avançadas e padrões internacionais de qualidade. O projeto abrangeu a construção de unidades industriais, laboratórios especializados e sistemas de suporte essenciais para garantir eficiência operacional e segurança sanitária.",
     status: "Concluído",
     year: "2020-2023",
-    scope: "200.000 habitantes • 150 km de rede"
+    scope: "10km construído para primeira fase contando com 55.000m² de área em falta"
   },
   {
-    image: project5,
-    images: [project5, project3, project6],
-    title: "Ponte Sobre o Rio Kwanza",
-    category: "Pontes",
-    location: "Kwanza Sul, Angola",
-    description: "Ponte de grande vão que cruza o Rio Kwanza, facilitando a ligação entre as províncias do norte e sul. A estrutura utiliza tecnologia de pontes suspensas e foi projetada para suportar tráfego pesado.",
+    image: escola1,
+    images: [escola1],
+    title: "Escola de 22 salas",
+    category: "Construção",
+    location: "Cuanza Norte, Angola",
+    description: "Construção de uma escola moderna composta por 22 salas de aula, projetada para oferecer um ambiente educativo funcional e acolhedor. A infraestrutura contempla áreas administrativas, espaços pedagógicos amplos, instalações sanitárias, pátio de recreação e condições adequadas para o ensino de diferentes níveis. A obra foi executada com foco na durabilidade, acessibilidade e melhoria das condições de aprendizagem para a comunidade local.",
     status: "Concluído",
-    year: "2022-2024",
-    scope: "850 metros • 4 faixas"
+    year: "2022-2023",
+    scope: "850m² de área construída"
   },
   {
-    image: project6,
-    images: [project6, project1, project4, project5],
-    title: "Inauguração Cidade Nova Esperança",
-    category: "Mega-Projecto",
-    location: "Huambo, Angola",
-    description: "Cidade planeada do zero com foco em sustentabilidade e qualidade de vida. O projeto inclui habitação, infraestruturas, equipamentos públicos, espaços comerciais e áreas verdes, criando uma comunidade completa e autossuficiente.",
-    status: "Em execução",
-    year: "2023-2028",
-    scope: "4.500 hectares • 12.000 habitações"
+    image: quididi1,
+    images: [quididi1, quididi2],
+    title: "Ponte do Rio Quididi",
+    category: "Construção",
+    location: "Cuanza Norte, Angola",
+    description: "A Ponte do Rio Quididi é uma infraestrutura estratégica construída para reforçar a mobilidade e a ligação entre as comunidades do Cuanza Norte. Desenvolvida com padrões modernos de engenharia, a obra garante segurança, durabilidade e eficiência no atravessamento do rio, melhorando o acesso a serviços, encurtando distâncias e impulsionando o desenvolvimento regional.",
+    status: "Concluído",
+    year: "2021-2022",
+    scope: "500m de extensão"
   },
 ];
 

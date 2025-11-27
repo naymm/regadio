@@ -43,3 +43,4 @@ if (session?.user) {
 3. **Se Profile existe**: Perfil foi criado corretamente
 4. **Se há erros**: Veja a mensagem de erro específica
 
+

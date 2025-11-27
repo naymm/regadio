@@ -134,3 +134,4 @@ console.log("Profile:", profile);
 - [ ] Variáveis de ambiente estão corretas
 - [ ] Servidor foi reiniciado após configurar `.env.local`
 
+
