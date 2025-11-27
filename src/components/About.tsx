@@ -17,8 +17,8 @@ const About = () => {
               className="relative rounded-2xl shadow-2xl w-full h-auto"
             />
             <div className="absolute -bottom-8 -right-8 bg-accent text-white p-6 rounded-xl shadow-xl">
-              <p className="text-4xl font-bold font-display">10.000+</p>
-              <p className="text-sm">Habitantes por cidade</p>
+              <p className="text-4xl font-bold font-display">+100</p>
+              <p className="text-sm">Projectos a nível nacional</p>
             </div>
           </div>
 

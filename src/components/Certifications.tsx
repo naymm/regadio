@@ -18,7 +18,7 @@ const Certifications = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div>
-            <p className="text-accent font-semibold mb-3 tracking-wide uppercase">Certificação</p>
+            <p className="text-accent font-semibold mb-3 tracking-wide uppercase">Certificações em Curso</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary font-display">
               Excelência Certificada
             </h2>
