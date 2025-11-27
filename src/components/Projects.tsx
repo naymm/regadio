@@ -5,6 +5,15 @@ import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
 import project5 from "@/assets/project-5.jpg";
 import project6 from "@/assets/project-6.jpg";
+
+// IMAGENS DA OBRA DO LUCALA
+import lucala1 from "../img/lucala/lucala1.jpeg";
+import lucala2 from "../img/lucala/lucala2.jpeg";
+import lucala3 from "../img/lucala/lucala3.jpeg";
+import lucala4 from "../img/lucala/lucala4.jpeg";
+
+
+
 import {
   Dialog,
   DialogContent,
@@ -27,14 +36,14 @@ interface Project {
 
 const projects: Project[] = [
   {
-    image: project1,
-    images: [project1, project2, project3],
-    title: "Complexo Residencial Luanda Sul",
-    category: "Habitação",
+    image: lucala1,
+    images: [lucala1, lucala2, lucala3, lucala4],
+    title: "3 km de artérias vila do Lucala",
+    category: "Reabilitação e construção",
     location: "Luanda, Angola",
     description: "Um complexo residencial moderno que oferece habitação de qualidade para mais de 5.000 famílias. O projeto inclui unidades residenciais, áreas comerciais, espaços verdes e infraestruturas completas de apoio.",
-    status: "Em execução",
-    year: "2023-2026",
+    status: "Concluído",
+    year: "2025-2025",
     scope: "2.500 habitações • 15 hectares"
   },
   {
